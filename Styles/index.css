@@ -1,0 +1,211 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+/* Updates all elements to inherit the box-sizing method defined above */
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Makes all images on the page fill 100% of their parent's width */
+img {
+    width: 100%;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+/* Sets the heading styles after the reset */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 5.063rem;
+    margin: 0.5em 0 0.3em;
+}
+
+h2 {
+    font-size: 3.375rem;
+    margin: 1em 0 0.5em;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+/* Common class to size (and position) page elements correctly */
+.max-margin {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav,
+.overlay,
+.about,
+.info,
+.vision,
+.john-info,
+.bob-info {
+    padding: 15px;
+}
+
+/* Base rectangular anchor tag button style */
+.btn {
+    border-radius: 0;
+    padding: 20px;
+    width: fit-content;
+}
+
+/* Sets buttons co-tagged "orange" to use the prescribed colours */
+.btn.orange {
+    background-color: #c78c06;
+    color: #222;
+}
+
+/* Sets buttons co-tagged "black" to use the prescribed colours */
+.btn.black {
+    background-color: #222;
+    color: white;
+}
+
+/* Sets the style for the "Our Vision" and magnifying glass search buttons */
+.search button,
+.btn.vision-btn {
+    background-color: rgba(2, 2, 2, 0.8);
+    border: 1px solid #c78c06;
+}
+nav,
+footer {
+    background-color: #222;
+    color: #c78c06;
+}
+
+/* This nav list has been to the gym, cause it's flexing on the whole page */
+/* Column orientation with content centered */
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/* Undoes the previous changes to the list entry containing the logo */
+nav ul li:first-child {
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Shrinks the logo so it isn't ridiculously large */
+nav img {
+    width: 75px;
+}
+
+/* Styles the nav links */
+nav li a {
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Undoes the styling for the list line containing the logo so it doesn't have weird interaction properties */
+nav li:first-child a {
+    width: fit-content;
+    padding: 0;
+}
+
+/* Sets the hover style for the nav links */
+nav .current,
+nav li a:hover,
+nav li a:focus,
+nav li a:active {
+    color: #222;
+    background-color: #c78c06;
+}
+
+/* Takes away the hover stlye for the logo, so there isn't a little line of colour popping up when you hover over the image */
+nav li:first-child a:hover,
+nav li:first-child a:focus,
+nav li:first-child a:active {
+    background-color: #222;
+}
+.search button {
+    width: fit-content;
+    height: auto;
+    color: #c78c06;
+    background-color: #222;
+}
+
+/* Resizes the magnifying glass */
+.fa-magnifying-glass {
+    font-size: large;
+}
+
+
+/* Sets the background image for the masthead and positions it */
+.banner {
+    background-image: url("../Assets/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sets the overlay container to a semi-transparent dark grey */
+.overlay {
+    background-color: rgba(2, 2, 2, 0.6);
+    color: white;
+}
+
+/* Sets the corresponding sections to their cream-like colour */
+#about-us,
+.card,
+.john,
+.bob,
+thead {
+    background-color: #ffe6ac;
+}
+
+/* Sets the display to a column flexbox to ensure desired layout */
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adds small gap after each card */
+.card {
+    margin-bottom: 15px;
+}
+
+/* Adds background image to "Our Vision", positions it, and sets the text to white */
+#our-vision {
+    background-image: url("../Assets/vision.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
